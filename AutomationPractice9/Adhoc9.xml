@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functionaltestingsuite">
+	<listeners>
+		<listener class-name="Capstone.AutomationPractice9.Ilisteners"></listener>
+	</listeners>
+	<test name="Regressionaltesting">
+		<parameter name="browsers" value="Chrome"></parameter>
+		<parameter name="Wbsite" value="http://www.facebook.com"></parameter>
+		<classes>
+			<!--class name="Capstone.AutomationPractice9.SignToAmazon"></class>
+			<class name="Capstone.AutomationPractice9.TextOfVerification"></class-->
+			<class name="Capstone.AutomationPractice9.Points"></class>
+			<class name="Capstone.AutomationPractice9.Property"></class>
+			</classes>
+	</test>
+	<test name="RegressionTestingEdge">
+		<parameter name="browsers" value="Edge"></parameter>
+		<parameter name="Wbsite" value="https://www.facebook.com/"></parameter>
+		<classes>
+			<!--class name="Capstone.AutomationPractice9.SignToAmazon"></class>
+			<class name="Capstone.AutomationPractice9.TextOfVerification"></class-->
+			<class name="Capstone.AutomationPractice9.Points"></class>
+			<class name="Capstone.AutomationPractice9.Property"></class>
+		</classes>
+	</test>
+</suite>

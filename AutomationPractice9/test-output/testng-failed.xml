@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functionaltestingsuite]">
+  <test thread-count="5" name="Regressionaltesting(failed)">
+    <parameter name="Wbsite" value="http://www.facebook.com"/>
+    <parameter name="browsers" value="Chrome"/>
+    <classes>
+      <class name="Capstone.AutomationPractice9.SignToAmazon">
+        <methods>
+          <include name="f"/>
+          <include name="afterMethod"/>
+          <include name="Browsers"/>
+        </methods>
+      </class> <!-- Capstone.AutomationPractice9.SignToAmazon -->
+      <class name="Capstone.AutomationPractice9.TextOfVerification">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="Browsers"/>
+          <include name="signin"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Capstone.AutomationPractice9.TextOfVerification -->
+    </classes>
+  </test> <!-- Regressionaltesting(failed) -->
+  <test thread-count="5" name="RegressionTestingEdge(failed)">
+    <parameter name="Wbsite" value="https://www.facebook.com/"/>
+    <parameter name="browsers" value="Edge"/>
+    <classes>
+      <class name="Capstone.AutomationPractice9.SignToAmazon">
+        <methods>
+          <include name="f"/>
+          <include name="afterMethod"/>
+          <include name="Browsers"/>
+        </methods>
+      </class> <!-- Capstone.AutomationPractice9.SignToAmazon -->
+      <class name="Capstone.AutomationPractice9.TextOfVerification">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="Browsers"/>
+          <include name="signin"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Capstone.AutomationPractice9.TextOfVerification -->
+    </classes>
+  </test> <!-- RegressionTestingEdge(failed) -->
+</suite> <!-- Failed suite [Functionaltestingsuite] -->
